@@ -1,6 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
 html {
   scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  &-track {
+    background: #1a1a1a;
+  }
+  &-thumb {
+    background: #0b0b0b;
+    border-radius: 10px;
+    &:hover {
+      background: #0829e93a;
+    }
+  }
 }
 *{
     padding: 0;
