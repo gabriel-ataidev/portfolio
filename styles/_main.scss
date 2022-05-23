@@ -1,0 +1,17 @@
+header{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 10vh;
+    nav{
+        ul{
+            display: flex;
+            gap: 40px;
+            .item-link{
+                color: #fff;
+            }
+        }
+    }
+}
