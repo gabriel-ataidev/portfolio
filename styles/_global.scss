@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -15,10 +15,10 @@ html {
     }
   }
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: $body-font;
@@ -39,6 +39,28 @@ ul {
 }
 a {
   text-decoration: none;
+  color: $text-color;
+  transition: .4s ease-in-out;
+  position: relative;
+  &:hover {
+    color: #fff;
+    &::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+  &::after {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: $secondary-color;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s ease-in-out;
+  }
 }
 img {
   max-width: 100%;
