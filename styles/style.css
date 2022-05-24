@@ -34,16 +34,28 @@ body {
   line-height: 1.6;
 }
 
-h1 {
-  font: 200 80px "Sacramento";
-}
-
 h1,
 h2,
 h3,
 p,
 ul {
   margin: 0;
+}
+
+h1 {
+  font: 200 80px "Sacramento";
+}
+
+.title {
+  color: #FF8412;
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+p {
+  color: #fff;
+  font-size: 20px;
 }
 
 ul {
@@ -88,20 +100,7 @@ a::after {
   transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-header {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url("/assets/mountain-bg.png");
-  background-size: cover;
-  background-position: bottom;
-}
-
-header nav {
+nav {
   width: 100%;
   height: 12vh;
   display: -webkit-box;
@@ -115,7 +114,7 @@ header nav {
           justify-content: center;
 }
 
-header nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,12 +124,25 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: 70px;
 }
 
-header nav ul .logo-1 {
+nav ul .logo-1 {
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/assets/mountain-bg.png");
+  background-size: cover;
+  background-position: bottom;
 }
 
 header .bio {
@@ -148,7 +160,7 @@ header .bio {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  margin-top: 30px;
+  padding-top: 30px;
   color: #000;
 }
 
@@ -160,6 +172,47 @@ header .bio .dev {
 
 header .bio .dev-description {
   font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+main #about {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #021B31;
+  background-image: url("/assets/pattern-bg.png");
+  background-size: cover;
+  background-position: bottom;
+}
+
+main #about nav {
+  background-color: #021B31;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+main #about .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 90px;
+  gap: 20px;
+}
+
+main #about .about-me p {
+  max-width: 60%;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
