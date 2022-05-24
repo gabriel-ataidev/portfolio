@@ -25,6 +25,12 @@ header {
   }
 }
 main {
+  nav {
+    background-color: $bg-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
   #about {
     width: 100%;
     min-height: 100vh;
@@ -32,23 +38,52 @@ main {
     background-image: url("/assets/pattern-bg.png");
     background-size: cover;
     background-position: bottom;
-    nav{
-        background-color: $bg-color;
-        position: sticky;
-        top: 0;
-        left: 0;
+    .about-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 120px;
+      gap: 20px;
+      p {
+        max-width: 60%;
+        text-align: center;
+      }
     }
-    .about-me{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-top: 90px;
-        gap: 20px;
-        p{
-            max-width: 60%;
-            text-align: center;
-        }
+  }
+  #tools {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $bg-color;
+    background-image: url("/assets/pattern-bg-3.png");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    .container {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+    }
+    .text {
+      gap: 12px;
+      display: flex;
+      justify-content: center;
+      .title {
+        text-align: start;
+        padding-bottom: 24px;
+      }
+      span {
+        max-width: 80%;
+      }
+    }
+    .image {
+      img {
+        margin: auto 0;
+      }
     }
   }
 }

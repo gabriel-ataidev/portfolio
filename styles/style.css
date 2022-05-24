@@ -48,14 +48,19 @@ h1 {
 
 .title {
   color: #FF8412;
-  font-size: 36px;
-  font-weight: 300;
+  font: 300 36px "Roboto";
   letter-spacing: 4px;
 }
 
-p {
+p, span {
+  font-family: "Roboto";
   color: #fff;
   font-size: 20px;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 ul {
@@ -66,8 +71,8 @@ ul {
 a {
   text-decoration: none;
   color: #B4E0FF;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   position: relative;
 }
 
@@ -94,10 +99,10 @@ a::after {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-  transition: -webkit-transform .4s ease-in-out;
-  transition: transform .4s ease-in-out;
-  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
 }
 
 nav {
@@ -176,6 +181,14 @@ header .bio .dev-description {
   color: #000;
 }
 
+main nav {
+  background-color: #021B31;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 main #about {
   width: 100%;
   min-height: 100vh;
@@ -183,14 +196,6 @@ main #about {
   background-image: url("/assets/pattern-bg.png");
   background-size: cover;
   background-position: bottom;
-}
-
-main #about nav {
-  background-color: #021B31;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  left: 0;
 }
 
 main #about .about-me {
@@ -207,12 +212,68 @@ main #about .about-me {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 90px;
+  padding-top: 120px;
   gap: 20px;
 }
 
 main #about .about-me p {
   max-width: 60%;
   text-align: center;
+}
+
+main #tools {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #021B31;
+  background-image: url("/assets/pattern-bg-3.png");
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+main #tools .container {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #tools .text {
+  gap: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #tools .text .title {
+  text-align: start;
+  padding-bottom: 24px;
+}
+
+main #tools .text span {
+  max-width: 80%;
+}
+
+main #tools .image img {
+  margin: auto 0;
 }
 /*# sourceMappingURL=style.css.map */
