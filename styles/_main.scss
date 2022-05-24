@@ -42,8 +42,7 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding-top: 120px;
+      padding-top: 150px;
       gap: 20px;
       p {
         max-width: 60%;
@@ -59,30 +58,111 @@ main {
     background-size: cover;
     background-position: bottom;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    .container {
-      width: 40%;
+    .tools-content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .container {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+      }
+      .text {
+        gap: 12px;
+        display: flex;
+        justify-content: center;
+        .title {
+          text-align: start;
+          padding-bottom: 24px;
+        }
+        span {
+          max-width: 80%;
+        }
+      }
+      .image {
+        img {
+          margin: auto 0;
+        }
+      }
+    }
+    .projects-text {
       display: flex;
       flex-direction: column;
-    }
-    .text {
-      gap: 12px;
-      display: flex;
+      align-items: center;
       justify-content: center;
-      .title {
-        text-align: start;
-        padding-bottom: 24px;
-      }
-      span {
-        max-width: 80%;
+      padding: 120px 0 100px;
+      p {
+        margin: 26px auto;
       }
     }
-    .image {
-      img {
-        margin: auto 0;
+  }
+  #projects {
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: auto;
+      .container {
+        width: 50%;
+    }
+    .video {
+        overflow: hidden;
+        video {
+          width: 100%;
+          display: flex;
+          flex: 1;
+        }
+      }
+      .text {
+        background-color: $secondary-color;
+        background-image: url("/assets/pattern-bg-2.png");
+        background-size: cover;
+        background-position: bottom;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 80px;
+        gap: 20px;
+        h1 {
+          font: 700 36px $body-font;
+          color: $btn-color;
+          filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.301));
+        }
+        span {
+          font-weight: 500;
+          max-width: 600px;
+        }
+        ul {
+          display: flex;
+          gap: 20px;
+          li {
+            color: $btn-color;
+            font-weight: 700;
+            font-size: 14px;
+          }
+        }
+        .buttons {
+          display: flex;
+          gap: 20px;
+          .button {
+              font-weight: 600;
+              font-size: 12px;
+            &:hover {
+              background-color: #064199;
+              border: none;
+              color: #47a4f5;
+              filter: drop-shadow(0px 1px 4px #0961e4b7);
+              svg {
+                path {
+                  transition: all 0.4s ease-in-out;
+                  fill: #47a4f5;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
