@@ -224,6 +224,8 @@ main nav {
   position: sticky;
   top: 0;
   left: 0;
+  -webkit-filter: drop-shadow(0 2px 2px #0961e469);
+          filter: drop-shadow(0 2px 2px #0961e469);
 }
 
 main #about {
@@ -451,7 +453,6 @@ main #contact {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -568,7 +569,8 @@ main #contact .form form .textarea .icon {
   left: 15px;
 }
 
-main #contact .form form input, main #contact .form form textarea {
+main #contact .form form input,
+main #contact .form form textarea {
   font-size: 20px;
   font: 300 18px "Roboto";
   padding: 14px 20px 14px 60px;
@@ -580,19 +582,23 @@ main #contact .form form input, main #contact .form form textarea {
   border-radius: 8px;
 }
 
-main #contact .form form input::-webkit-input-placeholder, main #contact .form form textarea::-webkit-input-placeholder {
+main #contact .form form input::-webkit-input-placeholder,
+main #contact .form form textarea::-webkit-input-placeholder {
   color: #B4E0FF;
 }
 
-main #contact .form form input:-ms-input-placeholder, main #contact .form form textarea:-ms-input-placeholder {
+main #contact .form form input:-ms-input-placeholder,
+main #contact .form form textarea:-ms-input-placeholder {
   color: #B4E0FF;
 }
 
-main #contact .form form input::-ms-input-placeholder, main #contact .form form textarea::-ms-input-placeholder {
+main #contact .form form input::-ms-input-placeholder,
+main #contact .form form textarea::-ms-input-placeholder {
   color: #B4E0FF;
 }
 
-main #contact .form form input::placeholder, main #contact .form form textarea::placeholder {
+main #contact .form form input::placeholder,
+main #contact .form form textarea::placeholder {
   color: #B4E0FF;
 }
 
@@ -607,5 +613,64 @@ main #contact .form form .button {
   border: none;
   font: 500 20px "Roboto";
   cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #021B31;
+  height: 10vh;
+  max-height: 100px;
+  color: #B4E0FF;
+  width: 100%;
+  padding: 0 120px;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(0 -2px 2px #0961e469);
+          filter: drop-shadow(0 -2px 2px #0961e469);
+}
+
+footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  font: 500 16px "Roboto";
+  gap: 10px;
+}
+
+footer .icons {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 17px;
+}
+
+footer .icons a svg {
+  width: 27px;
+  height: auto;
+}
+
+footer .icons a:hover svg {
+  -webkit-filter: drop-shadow(0 0 3px #B4E0FF);
+          filter: drop-shadow(0 0 3px #B4E0FF);
+}
+
+footer .icons a:hover svg path {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  fill: #021B31;
+  background: #021B31;
 }
 /*# sourceMappingURL=style.css.map */

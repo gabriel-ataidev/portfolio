@@ -30,6 +30,7 @@ main {
     position: sticky;
     top: 0;
     left: 0;
+    filter: drop-shadow(0 2px 2px #0961e469);
   }
   #about {
     width: 100%;
@@ -173,7 +174,6 @@ main {
     background-position: bottom;
     display: flex;
     flex-wrap: wrap;
-    min-height: auto;
     justify-content: center;
     .container {
       display: flex;
@@ -235,14 +235,15 @@ main {
             left: 15px;
           }
         }
-        .textarea{
+        .textarea {
           position: relative;
           .icon {
             top: calc(100% / 2 - 28px);
             left: 15px;
           }
         }
-        input, textarea {
+        input,
+        textarea {
           font-size: 20px;
           font: 300 18px $body-font;
           padding: 14px 20px 14px 60px;
@@ -263,6 +264,48 @@ main {
           border: none;
           font: 500 20px $body-font;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  align-items: center;
+  background: $bg-color;
+  height: 10vh;
+  max-height: 100px;
+  color: $text-color;
+  width: 100%;
+  padding: 0 120px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  filter: drop-shadow(0 -2px 2px #0961e469);
+  span {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    font: 500 16px $body-font;
+    gap: 10px;
+  }
+  .icons {
+    z-index: 10;
+    display: flex;
+    gap: 17px;
+    a {
+      svg {
+        width: 27px;
+        height: auto;
+      }
+      &:hover {
+        svg {
+          filter: drop-shadow(0 0 3px $text-color);
+          path {
+            transition: all 0.4s ease-in-out;
+            fill: $bg-color;
+            background: $bg-color;
+          }
         }
       }
     }
