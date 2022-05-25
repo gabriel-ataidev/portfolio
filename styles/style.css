@@ -830,12 +830,11 @@ footer .icons a:hover svg path {
   header .bio .dev {
     font-size: 10px;
     letter-spacing: 5px;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
+    min-width: 240px;
   }
   header .bio .dev-description {
     font-size: 16px;
+    max-width: 320px;
   }
   main #about .about-me {
     gap: 30px;
