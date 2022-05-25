@@ -818,5 +818,100 @@ footer .icons a:hover svg path {
   nav {
     display: none;
   }
+  header {
+    padding-top: 100px;
+  }
+  header .bio {
+    gap: 15px;
+  }
+  header .bio h1 {
+    font-size: 40px;
+  }
+  header .bio .dev {
+    font-size: 10px;
+    letter-spacing: 5px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .bio .dev-description {
+    font-size: 16px;
+  }
+  main #about .about-me {
+    gap: 30px;
+  }
+  main #about .about-me p {
+    max-width: 80%;
+  }
+  main #tools {
+    padding-top: 70px;
+  }
+  main #tools .tools-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #tools .tools-content .container {
+    width: 80%;
+  }
+  main #tools .tools-content .text .title {
+    text-align: center;
+  }
+  main #tools .tools-content .text span {
+    max-width: 100%;
+    text-align: center;
+  }
+  main #tools .projects-text p {
+    max-width: 80%;
+    text-align: center;
+  }
+  main #projects .project .text {
+    padding: 50px;
+  }
+  main #projects .project .text h1 {
+    font-size: 26px;
+  }
+  main #projects .project .text ul li {
+    font-size: 12px;
+  }
+  main #contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #contact .container {
+    width: 90%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 60px 0;
+  }
+  main #contact .social {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #contact .social .contact-bio {
+    text-align: center;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+    margin: 10px 0;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
 }
 /*# sourceMappingURL=style.css.map */
