@@ -487,6 +487,7 @@ main #contact .social {
 main #contact .social .contact-bio {
   font-size: 20px;
   font-weight: 400;
+  max-width: 400px;
 }
 
 main #contact .social .email {
@@ -672,5 +673,66 @@ footer .icons a:hover svg path {
   transition: all 0.4s ease-in-out;
   fill: #021B31;
   background: #021B31;
+}
+
+@media (max-width: 1200px) {
+  main #projects .project .text {
+    padding: 0 30px;
+    gap: 10px;
+  }
+  main #projects .project h1 {
+    font-size: 28px;
+  }
+  main #projects .project span {
+    font-size: 14px;
+  }
+  main #projects .project ul li {
+    font-size: 10px;
+  }
+  main #projects .project .buttons .button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 920px) {
+  p, span {
+    font-size: 16px;
+  }
+  .button {
+    padding: 10px 20px;
+  }
+  main #projects .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #projects .project .container {
+    width: 100%;
+  }
+  main #projects .project .video {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main #projects .project .text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 100px;
+    text-align: center;
+  }
+  main #tools .tools-content .container {
+    width: 45%;
+  }
+  main #contact .container {
+    width: 45%;
+  }
+  footer {
+    padding: 0 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
