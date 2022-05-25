@@ -827,6 +827,11 @@ footer .icons a:hover svg path {
   header .bio h1 {
     font-size: 40px;
   }
+  header .bio h2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
   header .bio .dev {
     font-size: 10px;
     letter-spacing: 5px;
