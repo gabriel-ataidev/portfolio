@@ -44,6 +44,7 @@ ul {
 
 h1 {
   font: 200 80px "Sacramento";
+  z-index: 1;
 }
 
 .title {
@@ -177,6 +178,65 @@ nav ul a::after {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.mobile-menu {
+  z-index: 10;
+  background-color: #021B31;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  width: 100%;
+  padding: 0 26px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-filter: drop-shadow(0 2px 2px #0961e469);
+          filter: drop-shadow(0 2px 2px #0961e469);
+}
+
+.mobile-menu .logo {
+  height: 50px;
+}
+
+.mobile-nav {
+  z-index: 9;
+  padding: 120px 0px 60px;
+  background-color: #021B31;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.mobile-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.mobile-nav ul .nav-item a {
+  text-decoration: none;
+  color: #B4E0FF;
+  font-weight: 500;
 }
 
 header {
@@ -733,6 +793,17 @@ footer .icons a:hover svg path {
   }
   footer {
     padding: 0 80px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
