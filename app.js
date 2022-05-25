@@ -31,10 +31,134 @@ container.addEventListener("mousemove", (e) => {
 });
 //animate in
 container.addEventListener("mouseenter", (e) => {
-    card.style.transition = `all 0.1s ease-in-out`;
+  card.style.transition = `all 0.1s ease-in-out`;
 });
 //animate out
 container.addEventListener("mouseleave", (e) => {
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
   card.style.transition = `all 0.5s ease-in-out`;
 });
+
+const srToph = ScrollReveal({
+  origin: "top",
+  distance: "15px",
+  duration: 1000,
+  delay: 50,
+});
+srToph.reveal(`header nav`, {
+  interval: 200,
+});
+
+const srBottom = ScrollReveal({
+  origin: "bottom",
+  distance: "15px",
+  duration: 1000,
+});
+srBottom.reveal(` .name, .dev, .dev-description`, {
+  interval: 200,
+});
+
+const srTop = ScrollReveal({
+  origin: "top",
+  distance: "15px",
+  duration: 1000,
+  delay: 50,
+});
+srTop.reveal(`.photo`, {
+  interval: 200,
+});
+
+const srLeft = ScrollReveal({
+  origin: "left",
+  distance: "30px",
+  duration: 2000,
+});
+srLeft.reveal(`.text span, .project .text ul li`, {
+  interval: 200,
+});
+
+const srRight = ScrollReveal({
+  origin: "right",
+  distance: "30px",
+  duration: 2000,
+});
+srRight.reveal(`.about-me p, .projects-text p, .project .text h1, .form`, {
+  interval: 200,
+});
+
+
+const srTopt = ScrollReveal({
+    origin: "top",
+    distance: "15px",
+    scale: 0.5,
+    duration: 1000,
+    delay: 500,
+});
+srTopt.reveal(`.tech-image, .button, video`, {
+    interval: 200,
+});
+
+const srLeftt = ScrollReveal({
+  origin: "left",
+  distance: "30px",
+  duration: 2000,
+});
+srLeftt.reveal(`.title, .contact-bio, .email, .icons`, {
+  interval: 10,
+});
+
+// const srLeft = ScrollReveal({
+//   origin: "left",
+//   distance: "30px",
+//   duration: 2000,
+// });
+// srLeft.reveal(`#text`, {
+//   interval: 400,
+// });
+
+// const srRight = ScrollReveal({
+//   origin: "right",
+//   distance: "30px",
+//   duration: 2000,
+// });
+// srRight.reveal(`#form`, {
+//   interval: 200,
+// });
+
+// const srLeft2 = ScrollReveal({
+//   origin: "left",
+//   distance: "30px",
+//   duration: 1000,
+//   delay: 200,
+// });
+// srLeft2.reveal(`.number`, {
+//   interval: 200,
+// });
+
+// const srRight2 = ScrollReveal({
+//   origin: "right",
+//   distance: "30px",
+//   duration: 1000,
+//   delay: 200,
+// });
+// srRight2.reveal(`.description`, {
+//   interval: 200,
+// });
+
+// const srTop = ScrollReveal({
+//   origin: "top",
+//   distance: "15px",
+//   duration: 1000,
+// });
+// srRight.reveal(`#bio-text, #invitation .content`, {
+//   interval: 200,
+// });
+
+// const srLeft3 = ScrollReveal({
+//   origin: "left",
+//   distance: "30px",
+//   duration: 1000,
+// });
+// srLeft3.reveal(`#photo`, {
+//   interval: 400,
+// });
