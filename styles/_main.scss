@@ -441,16 +441,17 @@ footer {
     display: none;
   }
   header{
-    padding-top: 100px;
+    padding-top: 130px;
     .bio{
       gap: 15px;
       h1{
         font-size: 40px;
       }
       .dev{
-        font-size: 10px;
+        font-size: 9px;
         letter-spacing: 5px;
         min-width: 240px;
+        text-align: center;
       }
       .dev-description{
         font-size: 16px;

@@ -819,7 +819,7 @@ footer .icons a:hover svg path {
     display: none;
   }
   header {
-    padding-top: 100px;
+    padding-top: 130px;
   }
   header .bio {
     gap: 15px;
@@ -828,9 +828,10 @@ footer .icons a:hover svg path {
     font-size: 40px;
   }
   header .bio .dev {
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 5px;
     min-width: 240px;
+    text-align: center;
   }
   header .bio .dev-description {
     font-size: 16px;
