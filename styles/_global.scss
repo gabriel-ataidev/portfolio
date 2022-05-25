@@ -5,13 +5,13 @@ html {
 ::-webkit-scrollbar {
   width: 15px;
   &-track {
-    background: #1a1a1a;
+    background: #021B31;
   }
   &-thumb {
-    background: #0b0b0b;
+    background: #042949;
     border-radius: 10px;
     &:hover {
-      background: #0829e93a;
+      background: #0862e97e;
     }
   }
 }

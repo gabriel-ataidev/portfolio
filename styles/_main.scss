@@ -106,8 +106,8 @@ main {
       min-height: auto;
       .container {
         width: 50%;
-    }
-    .video {
+      }
+      .video {
         overflow: hidden;
         video {
           width: 100%;
@@ -147,8 +147,8 @@ main {
           display: flex;
           gap: 20px;
           .button {
-              font-weight: 600;
-              font-size: 12px;
+            font-weight: 600;
+            font-size: 12px;
             &:hover {
               background-color: #064199;
               border: none;
@@ -162,6 +162,107 @@ main {
               }
             }
           }
+        }
+      }
+    }
+  }
+  #contact {
+    background-color: $bg-color;
+    background-image: url("/assets/pattern-bg.png");
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: auto;
+    justify-content: center;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+      height: 100vh;
+    }
+    .social {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .contact-bio {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .email {
+        display: flex;
+        align-items: center;
+        color: $text-color;
+        gap: 8px;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .icon-button {
+          &:hover {
+            filter: drop-shadow(0px 1px 4px rgb(9, 97, 228));
+            svg {
+              path {
+                transition: all 0.4s ease-in-out;
+                fill: $bg-color;
+              }
+            }
+          }
+        }
+        .button {
+          height: 50px;
+          transform: translateY(-3px);
+        }
+      }
+    }
+    .form {
+      display: flex;
+      align-items: center;
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+        .input {
+          position: relative;
+          .icon {
+            width: 30px;
+            position: absolute;
+            z-index: 10;
+            top: calc(100% / 2 - 14px);
+            left: 15px;
+          }
+        }
+        .textarea{
+          position: relative;
+          .icon {
+            top: calc(100% / 2 - 28px);
+            left: 15px;
+          }
+        }
+        input, textarea {
+          font-size: 20px;
+          font: 300 18px $body-font;
+          padding: 14px 20px 14px 60px;
+          width: 100%;
+          color: #fff;
+          background: $input-color;
+          background-color: -internal-light-dark(#fff);
+          border: none;
+          border-radius: 8px;
+          &::placeholder {
+            color: $text-color;
+          }
+        }
+        .button {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          border: none;
+          font: 500 20px $body-font;
+          cursor: pointer;
         }
       }
     }
