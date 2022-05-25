@@ -390,6 +390,10 @@ main #tools .tools-content .text span {
   max-width: 80%;
 }
 
+main #tools .tools-content .image {
+  padding: 40px;
+}
+
 main #tools .tools-content .image img {
   margin: auto 0;
 }
