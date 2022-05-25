@@ -447,13 +447,10 @@ footer {
       h1{
         font-size: 40px;
       }
-      h2{
-        min-width: fit-content;
-      }
       .dev{
         font-size: 10px;
         letter-spacing: 5px;
-        width: fit-content;
+        min-width: fit-content;
       }
       .dev-description{
         font-size: 16px;
