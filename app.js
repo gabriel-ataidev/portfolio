@@ -53,7 +53,7 @@ const srToph = ScrollReveal({
   duration: 1000,
   delay: 50,
 });
-srToph.reveal(`header nav`, {
+srToph.reveal(`header nav, #mobile-menu`, {
   interval: 200,
 });
 
@@ -110,7 +110,7 @@ const srLeftt = ScrollReveal({
   distance: "30px",
   duration: 2000,
 });
-srLeftt.reveal(`.title, .contact-bio, .email, .icons a`, {
+srLeftt.reveal(`.title, .contact-bio, .email`, {
   interval: 10,
 });
 
