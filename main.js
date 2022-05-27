@@ -46,70 +46,186 @@ toggleButton.addEventListener("click", () => {
   icon.classList.toggle("bx-x");
 });
 
-
-const srToph = ScrollReveal({
+//scrollreveal nav
+const srTopN = ScrollReveal({
   origin: "top",
-  distance: "15px",
+  distance: "0",
   duration: 1000,
+  scale: 1,
   delay: 50,
 });
-srToph.reveal(`header nav, #mobile-menu`, {
+srTopN.reveal(`#mobile-menu`, {
   interval: 200,
 });
 
-const srBottom = ScrollReveal({
-  origin: "bottom",
-  distance: "15px",
-  duration: 1000,
-});
-srBottom.reveal(` .name, .dev, .dev-description`, {
-  interval: 200,
-});
-
-const srTop = ScrollReveal({
+//scrollreveal nav
+const srScaleN = ScrollReveal({
   origin: "top",
-  distance: "15px",
+  distance: "0",
   duration: 1000,
+  scale: 2,
   delay: 50,
 });
-srTop.reveal(`.photo`, {
-  interval: 200,
-});
-
-const srLeft = ScrollReveal({
-  origin: "left",
-  distance: "30px",
-  duration: 2000,
-});
-srLeft.reveal(`.text span, .project .text ul li`, {
-  interval: 200,
-});
-
-const srRight = ScrollReveal({
-  origin: "right",
-  distance: "30px",
-  duration: 2000,
-});
-srRight.reveal(`.about-me p, .projects-text p, .project .text h1, .form`, {
-  interval: 200,
-});
-
-const srTopt = ScrollReveal({
-  origin: "top",
-  distance: "15px",
-  scale: 0.5,
-  duration: 1000,
-  delay: 500,
-});
-srTopt.reveal(`.tech-image, .button, video, .icons, footer span`, {
-  interval: 200,
-});
-
-const srLeftt = ScrollReveal({
-  origin: "left",
-  distance: "30px",
-  duration: 2000,
-});
-srLeftt.reveal(`.title, .contact-bio, .email`, {
+srScaleN.reveal(`#mobile-menu .logo, #mobile-menu #nav-toggle`, {
   interval: 10,
+});
+
+//scrollreveal header
+const srTopH = ScrollReveal({
+  origin: "top",
+  distance: "15px",
+  duration: 1000,
+  scale: 0.7,
+  delay: 50,
+});
+srTopH.reveal(`header nav, .bio .name, .bio .dev, .bio .dev-description`, {
+  interval: 200,
+});
+
+const srScaleH = ScrollReveal({
+  origin: "top",
+  distance: "15px",
+  duration: 500,
+  scale: 1.5,
+  delay: 50,
+});
+srScaleH.reveal(`header `, {
+  interval: 200,
+});
+
+//scrollreveal about
+const srTopA = ScrollReveal({
+  origin: "top",
+  distance: "15px",
+  duration: 1000,
+  scale: 0.7,
+  delay: 50,
+});
+srTopA.reveal(`.photo`, {
+  interval: 200,
+});
+
+const srLeftA = ScrollReveal({
+  origin: "left",
+  distance: "25px",
+  scale: 1,
+  duration: 1000,
+  delay: 200,
+});
+srLeftA.reveal(`.about-me .title`, {
+  interval: 200,
+});
+
+const srRightA = ScrollReveal({
+  origin: "right",
+  distance: "25px",
+  scale: 1,
+  duration: 1000,
+  delay: 400,
+});
+srRightA.reveal(`.about-p`, {
+  interval: 200,
+});
+
+//scrollreveal tools
+const srTopT = ScrollReveal({
+  origin: "top",
+  distance: "15px",
+  duration: 1000,
+  scale: 0.7,
+  delay: 50,
+});
+srTopT.reveal(`.tech-image`, {
+  interval: 200,
+});
+
+const srLeftT = ScrollReveal({
+  origin: "left",
+  distance: "25px",
+  duration: 1000,
+  scale: 1,
+  delay: 50,
+});
+srLeftT.reveal(`.tools-content .title, .tools-content span`, {
+  interval: 150,
+});
+
+//scrollreveal projects(in tools)
+const srTopPt = ScrollReveal({
+  origin: "top",
+  distance: "25px",
+  duration: 1000,
+  scale: 1,
+  delay: 50,
+});
+srTopPt.reveal(`.projects-text .title, .projects-text p`, {
+  interval: 100,
+});
+
+const srScalePt = ScrollReveal({
+  origin: "bottom",
+  distance: "0px",
+  duration: 1000,
+  scale: 0.5,
+  delay: 50,
+});
+srScalePt.reveal(`#project-button`, {
+  interval: 100,
+});
+
+//scrollreveal projects
+const srLeftP = ScrollReveal({
+  origin: "left",
+  distance: "25px",
+  duration: 1000,
+  scale: 1,
+  delay: 50,
+});
+srLeftP.reveal(`.project .text h1, .project .text span, .project .text ul li`, {
+  interval: 100,
+});
+
+const srScaleP = ScrollReveal({
+  origin: "left",
+  distance: "0px",
+  duration: 1000,
+  scale: 0.5,
+  delay: 50,
+});
+srScaleP.reveal(`.project .text .buttons .button`, {
+  interval: 100,
+});
+
+const srScaleP2 = ScrollReveal({
+  origin: "left",
+  distance: "0px",
+  duration: 1000,
+  scale: 2,
+  delay: 50,
+});
+srScaleP2.reveal(`.project .video video`, {
+  interval: 100,
+});
+
+//scrollreveal conact
+const srLeftC = ScrollReveal({
+  origin: "left",
+  distance: "25px",
+  duration: 1000,
+  scale: 1,
+  delay: 50,
+});
+srLeftC.reveal(`#contact .social .title, #contact .social .contact-bio, #contact .social .email, #contact .social .icons a`, {
+  interval: 100,
+});
+
+const srRightC = ScrollReveal({
+  origin: "right",
+  distance: "25px",
+  duration: 1000,
+  scale: 1,
+  delay: 50,
+});
+srRightC.reveal(`#contact .form form .input, #contact .form form .button`, {
+  interval: 100,
 });
