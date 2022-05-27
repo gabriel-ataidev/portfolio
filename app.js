@@ -6,7 +6,6 @@ const showMenu = (toggleId, navId) => {
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
       nav.classList.toggle("show-menu");
-      console.log("working");
     });
   }
 };
@@ -38,6 +37,14 @@ container.addEventListener("mouseleave", (e) => {
   card.style.transform = `rotateY(0deg) rotateX(0deg)`;
   card.style.transition = `all 0.5s ease-in-out`;
 });
+
+//chnaging nav icon
+const toggleButton = document.getElementById("nav-toggle");
+const icon = document.querySelector(".bx");
+toggleButton.addEventListener("click", () => {
+  icon.classList.toggle("bx-x");
+});
+
 
 const srToph = ScrollReveal({
   origin: "top",
@@ -86,16 +93,15 @@ srRight.reveal(`.about-me p, .projects-text p, .project .text h1, .form`, {
   interval: 200,
 });
 
-
 const srTopt = ScrollReveal({
-    origin: "top",
-    distance: "15px",
-    scale: 0.5,
-    duration: 1000,
-    delay: 500,
+  origin: "top",
+  distance: "15px",
+  scale: 0.5,
+  duration: 1000,
+  delay: 500,
 });
 srTopt.reveal(`.tech-image, .button, video`, {
-    interval: 200,
+  interval: 200,
 });
 
 const srLeftt = ScrollReveal({

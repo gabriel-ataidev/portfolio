@@ -180,6 +180,10 @@ img {
   height: auto;
 }
 
+.bx {
+  font-size: 36px;
+}
+
 #mobile-menu {
   z-index: 101;
   background-color: #021B31;
