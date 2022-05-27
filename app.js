@@ -16,6 +16,7 @@ const navLink = document.querySelectorAll(".nav-item");
 function linkAction() {
   const navMenu = document.getElementById("mobile-nav");
   navMenu.classList.remove("show-menu");
+  icon.classList.toggle("bx-x");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
