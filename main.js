@@ -49,7 +49,7 @@ toggleButton.addEventListener("click", () => {
 //scrollreveal nav
 const srTopN = ScrollReveal({
   origin: "top",
-  distance: "0",
+  distance: "0px",
   duration: 1000,
   scale: 1,
   delay: 50,
@@ -67,7 +67,7 @@ const srScaleN = ScrollReveal({
   delay: 50,
 });
 srScaleN.reveal(`#mobile-menu .logo, #mobile-menu #nav-toggle`, {
-  interval: 10,
+  interval: 0,
 });
 
 //scrollreveal header
@@ -79,17 +79,6 @@ const srTopH = ScrollReveal({
   delay: 50,
 });
 srTopH.reveal(`header nav, .bio .name, .bio .dev, .bio .dev-description`, {
-  interval: 200,
-});
-
-const srScaleH = ScrollReveal({
-  origin: "top",
-  distance: "15px",
-  duration: 500,
-  scale: 1.5,
-  delay: 50,
-});
-srScaleH.reveal(`header `, {
   interval: 200,
 });
 
