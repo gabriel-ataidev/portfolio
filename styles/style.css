@@ -223,8 +223,8 @@ img {
   position: fixed;
   top: -100%;
   left: 0;
-  -webkit-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 #mobile-nav ul {
@@ -772,7 +772,8 @@ footer .icons a:hover svg path {
 }
 
 @media (max-width: 920px) {
-  p, span {
+  p,
+  span {
     font-size: 16px;
   }
   .button {
@@ -824,6 +825,7 @@ footer .icons a:hover svg path {
   }
   header {
     padding-top: 130px;
+    background-image: url("/assets/mountain-bg-2.png");
   }
   header .bio {
     gap: 15px;
@@ -921,6 +923,17 @@ footer .icons a:hover svg path {
     max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
     max-height: fit-content;
+  }
+}
+
+@media (max-width: 550px) {
+  header {
+    background-image: url("/assets/mountain-bg-3.png");
+    background-position: center;
+    padding-top: 180px;
+  }
+  header .bio {
+    gap: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

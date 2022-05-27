@@ -1,4 +1,4 @@
-#mobile-menu{
+#mobile-menu {
   z-index: 101;
   background-color: $bg-color;
   display: none;
@@ -11,14 +11,14 @@
   top: 0;
   left: 0;
   filter: drop-shadow(0 2px 2px #0961e469);
-  .logo{
+  .logo {
     height: 50px;
   }
-  #nav-toggle{
+  #nav-toggle {
     cursor: pointer;
   }
 }
-#mobile-nav{
+#mobile-nav {
   z-index: 100;
   padding: 140px 0px 60px;
   background-color: $bg-color;
@@ -27,23 +27,22 @@
   position: fixed;
   top: -100%;
   left: 0;
-  transition: all .6s ease-in-out;
-  ul{
+  transition: all 0.6s ease-in-out;
+  ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    .nav-item{
-      a{
+    .nav-item {
+      a {
         text-decoration: none;
         color: $text-color;
         font-weight: 500;
       }
     }
   }
-
 }
-#mobile-nav.show-menu{
+#mobile-nav.show-menu {
   top: 0;
   left: 0;
 }
@@ -371,19 +370,19 @@ footer {
           padding: 0 30px;
           gap: 10px;
         }
-        h1{
+        h1 {
           font-size: 28px;
         }
-        span{
+        span {
           font-size: 14px;
         }
-        ul{
-          li{
+        ul {
+          li {
             font-size: 10px;
           }
         }
-        .buttons{
-          .button{
+        .buttons {
+          .button {
             padding: 10px 20px;
           }
         }
@@ -392,23 +391,24 @@ footer {
   }
 }
 @media (max-width: 920px) {
-  p, span{
+  p,
+  span {
     font-size: 16px;
   }
-  .button{
+  .button {
     padding: 10px 20px;
   }
   main {
     #projects {
       .project {
         flex-direction: column;
-        .container{
+        .container {
           width: 100%;
         }
-        .video{
+        .video {
           order: 2;
         }
-        .text{
+        .text {
           order: 1;
           align-items: center;
           padding: 100px;
@@ -416,119 +416,130 @@ footer {
         }
       }
     }
-    #tools{
-      .tools-content{
-        .container{
+    #tools {
+      .tools-content {
+        .container {
           width: 45%;
         }
       }
     }
-    #contact{
-      .container{
+    #contact {
+      .container {
         width: 45%;
       }
     }
   }
-  footer{
+  footer {
     padding: 0 80px;
   }
 }
 @media (max-width: 800px) {
-  #mobile-menu{
+  #mobile-menu {
     display: flex;
   }
-  nav{
+  nav {
     display: none;
   }
-  header{
+  header {
     padding-top: 130px;
-    .bio{
+    background-image: url("/assets/mountain-bg-2.png");
+    .bio {
       gap: 15px;
-      h1{
+      h1 {
         font-size: 40px;
       }
-      .dev{
+      .dev {
         font-size: 9px;
         letter-spacing: 5px;
         min-width: 240px;
         text-align: center;
       }
-      .dev-description{
+      .dev-description {
         font-size: 16px;
         max-width: 320px;
       }
     }
   }
-  main{
-    #about{
+  main {
+    #about {
       min-height: fit-content;
-      .about-me{
+      .about-me {
         gap: 30px;
-        p{
+        p {
           max-width: 80%;
         }
       }
     }
-    #tools{
+    #tools {
       padding-top: 170px;
-      .tools-content{
+      .tools-content {
         align-items: center;
         flex-direction: column;
-        .container{
+        .container {
           width: 80%;
         }
-        .text{
-          .title{
+        .text {
+          .title {
             text-align: center;
           }
-          span{
+          span {
             max-width: 100%;
             text-align: center;
           }
         }
       }
-      .projects-text{
-        p{
+      .projects-text {
+        p {
           max-width: 80%;
           text-align: center;
         }
       }
     }
-    #projects{
-      .project{
-        .text{
+    #projects {
+      .project {
+        .text {
           padding: 50px;
-          h1{
+          h1 {
             font-size: 26px;
           }
-          ul{
-            li{
+          ul {
+            li {
               font-size: 12px;
             }
           }
         }
       }
     }
-    #contact{
+    #contact {
       flex-direction: column;
       align-items: center;
-      .container{
+      .container {
         width: 90%;
         height: fit-content;
         padding: 60px 0;
       }
-      .social{
+      .social {
         align-items: center;
-        .contact-bio{
+        .contact-bio {
           text-align: center;
         }
       }
     }
   }
-  footer{
+  footer {
     flex-direction: column;
     gap: 5px;
-    margin:  10px 0;
+    margin: 10px 0;
     max-height: fit-content;
+  }
+}
+@media (max-width: 550px) {
+  header {
+    background-image: url("/assets/mountain-bg-3.png");
+    background-position: center;
+    padding-top: 180px;
+    .bio {
+      gap: 25px;
+    }
   }
 }
