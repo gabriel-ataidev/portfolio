@@ -101,7 +101,7 @@ const srTopt = ScrollReveal({
   duration: 1000,
   delay: 500,
 });
-srTopt.reveal(`.tech-image, .button, video, .icons`, {
+srTopt.reveal(`.tech-image, .button, video, .icons, footer span`, {
   interval: 200,
 });
 
