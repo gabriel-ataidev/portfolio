@@ -461,6 +461,7 @@ footer {
   }
   main{
     #about{
+      min-height: fit-content;
       .about-me{
         gap: 30px;
         p{

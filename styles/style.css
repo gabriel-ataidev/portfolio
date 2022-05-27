@@ -841,6 +841,11 @@ footer .icons a:hover svg path {
     font-size: 16px;
     max-width: 320px;
   }
+  main #about {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
   main #about .about-me {
     gap: 30px;
   }

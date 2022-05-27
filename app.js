@@ -110,7 +110,7 @@ const srLeftt = ScrollReveal({
   distance: "30px",
   duration: 2000,
 });
-srLeftt.reveal(`.title, .contact-bio, .email, .icons`, {
+srLeftt.reveal(`.title, .contact-bio, .email, .icons a`, {
   interval: 10,
 });
 
